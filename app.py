@@ -1,10 +1,12 @@
 import streamlit as st
 import pickle
 import string
-from nltk.corpus import stopwords
 import nltk
+from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import sklearn
+nltk.download('wordnet')
+nltk.download('punkt')
 
 
 ps = PorterStemmer()
